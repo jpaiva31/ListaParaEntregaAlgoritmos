@@ -5,8 +5,9 @@ Considere sempre anos completos, e que um ano possui 365 dias. Ex: uma pessoa co
 
 int main(){
     double a;
-    printf("Digite a idade\n");
-    scanf("%lf", &a);
-    printf("Ja viveu %lf dias.",a*365);
+    char nome[30];
+    printf("Digite, respectivamente, o nome e a idade\n");
+    scanf("%s %lf",&nome, &a);
+    printf("%s ja viveu %.lf dias.",nome,a*365);
  return 0;   
 }
