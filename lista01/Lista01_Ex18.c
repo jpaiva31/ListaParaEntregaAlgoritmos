@@ -1,13 +1,14 @@
-/*.A granja Frangotech possui um controle automatizado de cada frango da sua produÁ„o. No pÈ direito do
-frango h· um anel com um chip de identificaÁ„o; no pÈ esquerdo s„o dois anÈis para indicar o tipo de alimento que ele deve consumir.
-Sabendo que o anel com chip custa R$4,00 e o anel de alimento custa R$3,50, faÁa um algoritmo para calcular o gasto total da granja
- para marcar todos os seus frangos. */
+/*A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Fa√ßa um algoritmo para calcular e imprimir o
+sal√°rio bruto e o sal√°rio l√≠quido de um determinado funcion√°rio. Considere que o sal√°rio l√≠quido √© igual ao sal√°rio bruto descontando-se
+ 10% de impostos. */
 #include <stdio.h>
 
 int main(){
-    float a;
-    printf("Digite a quantidade de frangos da granja\n");
-    scanf("%f",&a);
-    printf("Voce gastara %f reais\n",a*11);
+    float a, b, sb,sl;
+    printf("Digite, respectivamente, a quantidade de horas normais e extras trabalhadas\n");
+    scanf("%f %f", &a, &b);
+    sb=10*a+15*b;
+    sl=sb-sb*0.01;
+    printf("Salario bruto: %.f\nSalario liquido: %.f",sb, sl);
 return 0;
 }
