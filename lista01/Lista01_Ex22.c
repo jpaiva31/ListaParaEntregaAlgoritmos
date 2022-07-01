@@ -1,7 +1,7 @@
-/*Pedrinho tem um cofrinho com muitas moedas, e deseja saber quantos reais conseguiu poupar. Faça um
+/*Pedrinho tem um cofrinho com muitas moedas, e deseja saber quantos reais conseguiu poupar. FaÃ§a um
 algoritmo para ler a quantidade de cada tipo de moeda, e imprimir o valor total economizado, em reais.
- Considere que existam moedas de 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. Não havendo moeda de
-um tipo, a quantidade respectiva é zero*/
+ Considere que existam moedas de 1, 5, 10, 25 e 50 centavos, e ainda moedas de 1 real. NÃ£o havendo moeda de
+um tipo, a quantidade respectiva Ã© zero*/
 #include <stdio.h>
 
 int main(){
