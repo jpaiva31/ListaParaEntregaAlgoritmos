@@ -1,0 +1,22 @@
+/*Uma escola faz o pagamento de seus professores por hora/aula. Faça um algoritmo que solicite ao usuário, o
+nível do professor e a quantidade de horas/aula ele tem na semana. Em seguida, calcule e exiba o salário de
+um professor sabendo que a fórmula para o cálculo do salário é salario = valorHoraAula * QtdAula * 4.5. O valor
+da hora/aula do professor é dado em função do seu nível:
+Professor Nível 1 R$12,00 por hora/aula
+Professor Nível 2 R$17,00 por hora/aula
+Professor Nível 3 R$25,00 por hora/aula
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("Digite respectivamente, a quantidade de horas/aula e seu nivel:\n");
+    scanf("%d %d", &a,&b);
+    if(b==1) printf("Seu salario: %.2f", 12*a*4.5);
+    else if(b==2) printf("Seu salario: %.2f", 17*a*4.5);
+    else if(b==3) printf("Seu salario: %.2f", 25*a*4.5);
+
+    return 0;
+}
