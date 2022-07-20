@@ -1,12 +1,14 @@
+
 /*Criar um vetor A com 10 elementos inteiros. Escrever um programa que calcule e escreva:
-a) a soma de elementos armazenados neste vetor que s„o inferiores a 15;
-b) a quantidade de elementos armazenados no vetor que s„o iguais a 15; e
-c) a mÈdia dos elementos armazenados no vetor que s„o superiores a 15. */
+a) a soma de elementos armazenados neste vetor que s√£o inferiores a 15;
+b) a quantidade de elementos armazenados no vetor que s√£o iguais a 15; e
+c) a m√©dia dos elementos armazenados no vetor que s√£o superiores a 15. */
 #include <stdio.h>
 
 int main()
 {
     int a[20],b[4];
+    float media=0;
     for(int i=0; i<4; i++)b[i]=0;
     printf("Digite os 10 elementos do vetor\n");
     for(int i=0; i<10; i++)
@@ -22,6 +24,9 @@ int main()
 
     }
 
-    printf("Soma dos elementos inferiores a 15: %d\nQuantidade de elementos iguais a 15: %d\nA media de elementos superiores a 15: %d", b[1],b[0],b[2]/b[3]);
+    if(b[3]!=0)media=b[2]/b[3];
+    
+
+    printf("Soma dos elementos inferiores a 15: %d\nQuantidade de elementos iguais a 15: %d\nA media de elementos superiores a 15: %d", b[1],b[0],media);
     return 0;
 }
